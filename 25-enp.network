@@ -1,0 +1,7 @@
+[Match]
+Name=en*
+[Link]
+ActivationPolicy=always-up
+ARP=false
+[Network]
+Bridge=br0

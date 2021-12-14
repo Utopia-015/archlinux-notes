@@ -1,0 +1,4 @@
+[NetDev]
+Description=Create a bridge named br0
+Name=br0
+Kind=bridge

@@ -1,0 +1,6 @@
+[Match]
+Name=br0
+[Link]
+ActivationPolicy=always-up
+[Network]
+DHCP=yes

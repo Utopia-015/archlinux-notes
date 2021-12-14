@@ -1,0 +1,4 @@
+[NetDev]
+Description=Create a tap named tap0
+Name=tap0
+Kind=tap
