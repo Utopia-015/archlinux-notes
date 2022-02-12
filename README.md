@@ -15,7 +15,7 @@ $ sh -c "$(curl -fsSL https://git.io/zinit-install)"
 ```
 編輯 `~/.zshrc` 配置插件主題等，詳細參考 [Zinit Introduction](https://zdharma-continuum.github.io/zinit/wiki/INTRODUCTION/)
 ```
-# 使用 p10k 主题
+# 使用 p10k 主题，需要安装 ttf-meslo-nerd-font-powerlevel10k(AUR)
 zinit ice depth=1
 zinit light romkatv/powerlevel10k
 ```
