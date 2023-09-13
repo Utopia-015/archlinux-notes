@@ -19,7 +19,6 @@ $ sh -c "$(curl -fsSL https://git.io/zinit-install)"
 zinit ice depth=1
 zinit light romkatv/powerlevel10k
 ```
-
 4. 仿 Fish 命令高亮：你可以从官方仓库里安装 zsh-syntax-highlighting，然后添加下面的配置到你的 zshrc 中
 ```
 source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
@@ -34,6 +33,18 @@ typeset -A ZSH_HIGHLIGHT_STYLES
 ZSH_HIGHLIGHT_STYLES[single-hyphen-option]='fg=cyan'
 ZSH_HIGHLIGHT_STYLES[double-hyphen-option]='fg=cyan'
 ```
+
+### 使用 PipeWire
+1. Session 会话管理选择 WirePlumber
+2. 安装 pipewire-pulse, 如提示与 pulseaudio 和 pulseaudio-bluetooth 冲突则确认移除。重新启动、重新登录或 start `pipewire-pulse.service` user unit 以查看效果。
+   通常，不需要进一步的操作，应用应作为用户服务自动启用 `pipewire-pulse.socket`。要检查替换是否正常工作，请运行以下命令并查看输出：
+   ```
+   $ pactl info
+   ...
+   Server Name: PulseAudio (on PipeWire 0.3.79)
+   ...
+   ```
+
 ### Smb 文件共享
 1. 安裝 Samba
 ```
@@ -107,3 +118,4 @@ Cost=4
 + [ArchWiki#Samba](https://wiki.archlinux.org/title/Samba)
 + [systemd.network(5)](https://man.archlinux.org/man/systemd.network.5.en)
 + [systemd.netdev(5)](https://man.archlinux.org/man/systemd.netdev.5.en)
++ [PipeWire#用法](https://wiki.archlinuxcn.org/wiki/PipeWire#%E7%94%A8%E6%B3%95)
